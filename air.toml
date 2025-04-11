@@ -1,0 +1,28 @@
+# air.toml
+
+# The binary file name
+bin = "tmp/main"
+
+# The working directory of the application
+root = "."
+
+# Extensions to watch for changes
+watch_ext = ["go", "html", "css", "js", "json"]
+
+# Ignore specific files/folders (e.g., vendor, .git, etc.)
+ignore = ["vendor", ".git", "node_modules"]
+
+# If the app has a custom binary
+build_cmd = "go build -o tmp/main"
+
+# If you want to pass arguments to your Go program
+run_cmd = "tmp/main"
+
+# Watch directories (default: .)
+watch_dir = []
+
+# Delay for the reloading
+delay = "1000ms"
+
+# If you want to specify a color scheme
+color = "true"
